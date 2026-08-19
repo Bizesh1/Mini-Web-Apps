@@ -17,7 +17,7 @@ function Home() {
     <div className="min-h-screen bg-[#faf9f6] p-8">
       <h1 className="mb-6 text-2xl font-bold text-[#1b231e]"> Web Apps </h1>
 
-      <ul className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-5">
+      <ul className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {apps.map((app) => (
           <li key={app.path} className={cardStyle}>
             <Link to={app.path} className="block">
